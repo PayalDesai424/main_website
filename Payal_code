@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Booking</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1 align="center">Welcome to Air Lambton</h1>
+
+    <ul>
+      <li><a href="http://127.0.0.1:5000/home">Home</a></li>
+      <li><a class="active" href="http://127.0.0.1:5000/managebooking">Manage Booking</a></li>
+      <li><a href="http://127.0.0.1:5000/contactus">Contact Us</a></li>
+      <li><a href="http://127.0.0.1:5000/faq">FAQ</a></li>
+      <li><a href="http://127.0.0.1:5000/covidupdate">Covid19 Updates</a></li>
+      <li><a href="http://127.0.0.1:5000/luggage">Luggage</a></li>
+        <li><a href="http://127.0.0.1:5000/login">Login</a></li>
+        <li><a href="http://127.0.0.1:5000/admin">Admin</a></li>
+    </ul>
+
+    <div>
+        <h2>Manage Booking</h2>
+        <p>For security reasons, you must confirm your identity before you can view your bookings.</p>
+    </div>
+
+    <div class="newslettermain">
+    <form method="post" name="managebooking" id="managebooking" class="newslettermainform" action="http://127.0.0.1:5000/managebookingdata">
+    <label>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label>Booking Reference</label>
+    <input type="text" id="bookingref" name="bookingref" placeholder="Your booking reference..">
+
+        <label>Ticket Number</label>
+    <input type="text" id="ticketno" name="ticketno" placeholder="Your ticket number..">
+
+        <input type="submit" value="Retrieve Booking">
+        </form>
+</div>
+
+<div class="copyright">
+	&copy; Copyright. Emerging Technology Project.
+</div>
+
+</body>
+</html>
